@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Wellness Hub - Login/Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="form-container" id="loginForm">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" placeholder="Username" id="loginUsername" required>
+                <input type="password" placeholder="Password" id="loginPassword" required>
+                <button type="submit" id="loginButton">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form-container" id="registerForm" style="display: none;">
+            <h2>Register</h2>
+            <form id="register-form">
+                <input type="text" placeholder="Username" id="registerUsername" required>
+                <input type="password" placeholder="Password" id="registerPassword" required>
+                <input type="password" placeholder="Confirm Password" id="confirmPassword" required>
+                <button type="submit" id="registerButton">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+        </div>
+
+        <!-- Welcome Page -->
+        <div class="welcome-container" id="welcomeContainer" style="display: none;">
+            <h2>Welcome to Your Mental Health Guide</h2>
+            <p>Explore resources and tools to improve your mental well-being.</p>
+        </div>
+
+        <!-- Quote Container -->
+        <div class="quote-container" id="quoteContainer">
+            <p id="quoteText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
